@@ -1,15 +1,15 @@
-Release - Real-time Edge Software 2.7 (includes AVB)
- December 2023
+Release - Real-time Edge Software 2.8 (includes AVB)
+ March 2024
 
-Outgoing License: LA_OPT_NXP_Software_License v50 November 2023 - Additional Distribution License granted - Section 2.3 applies
+Outgoing License: LA_OPT_NXP_Software_License v54 February 2024 - Additional Distribution License granted - Section 2.3 applies
 License File:     LICENSE.txt
 
 Yocto Project recipe manifest:
-repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-mickledore -m real-time-edge-2.7.0.xml
+repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-mickledore -m real-time-edge-2.8.0.xml
 
-Release tag: Real-Time-Edge-v2.7-202312
+Release tag: Real-Time-Edge-v2.8-202403
 
-This file is an addendum to SCR-REAL-TIME-EDGE_2.7.txt.
+This file is an addendum to SCR-REAL-TIME-EDGE_2.8.txt.
 
 ----------------------------------------
 

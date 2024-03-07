@@ -3,8 +3,10 @@ inherit pkgconfig
 GENAVB_TSN_CONFIG:mx6-nxp-bsp = "endpoint_avb"
 GENAVB_TSN_CONFIG:mx8-nxp-bsp = "endpoint_avb"
 GENAVB_TSN_CONFIG:mx8mp-nxp-bsp = "endpoint_avb_tsn"
-GENAVB_TSN_CONFIG:mx93-nxp-bsp = "endpoint_avb_tsn"
 GENAVB_TSN_CONFIG:mx8dxl-nxp-bsp = "endpoint_avb_tsn_bridge"
+GENAVB_TSN_CONFIG:imx93evk = "endpoint_avb_tsn"
+GENAVB_TSN_CONFIG:imx93-9x9-lpddr4-qsb = "endpoint_tsn"
+GENAVB_TSN_CONFIG:imx93-14x14-lpddr4x-evk = "endpoint_avb_tsn_hybrid"
 
 GENAVB_TSN_TARGET:mx8-nxp-bsp = "linux_imx8"
 GENAVB_TSN_TARGET:mx93-nxp-bsp = "linux_imx8"
@@ -16,14 +18,14 @@ GENAVB_TSN_DEMO_APPS = "1"
 # Add dependencies for AVB endpoint demo apps
 ENDPOINT_AVB_APPS_DEPS = "alsa-lib gstreamer1.0 gstreamer1.0-plugins-base"
 
-DEPENDS:append = " ${@bb.utils.contains_any('GENAVB_TSN_CONFIG', 'endpoint_avb endpoint_avb_tsn endpoint_avb_tsn_bridge', \
+DEPENDS:append = " ${@bb.utils.contains_any('GENAVB_TSN_CONFIG', 'endpoint_avb endpoint_avb_tsn endpoint_avb_tsn_bridge endpoint_avb_tsn_hybrid', \
 		      bb.utils.contains('GENAVB_TSN_DEMO_APPS', '1', '${ENDPOINT_AVB_APPS_DEPS}', ' ', d),\
 		      '', d)}"
 
 # Add Runtime recommended packages for AVB endpoint demo apps
 ENDPOINT_AVB_APPS_RRECOMMENDS = "genavb-media alsa-utils-alsamixer"
 
-RRECOMMENDS:${PN}:append = " ${@bb.utils.contains_any('GENAVB_TSN_CONFIG', 'endpoint_avb endpoint_avb_tsn endpoint_avb_tsn_bridge', \
+RRECOMMENDS:${PN}:append = " ${@bb.utils.contains_any('GENAVB_TSN_CONFIG', 'endpoint_avb endpoint_avb_tsn endpoint_avb_tsn_bridge endpoint_avb_tsn_hybrid', \
 				bb.utils.contains('GENAVB_TSN_DEMO_APPS', '1', '${ENDPOINT_AVB_APPS_RRECOMMENDS}', ' ', d),\
 				'', d)}"
 
