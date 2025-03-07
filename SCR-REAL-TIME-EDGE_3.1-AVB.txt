@@ -1,15 +1,15 @@
-Release - Real-time Edge Software 3.0 (includes AVB)
- December 2024
+Release - Real-time Edge Software 3.1 (includes AVB)
+ March 2025
 
-Outgoing License: LA_OPT_NXP_Software_License v58 November 2024 - Additional Distribution License granted - Section 2.3 applies
+Outgoing License: LA_OPT_NXP_Software_License v60 February 2025 - Additional Distribution License granted - Section 2.3 applies
 License File:     LICENSE.txt
 
 Yocto Project recipe manifest:
-repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-scarthgap -m real-time-edge-3.0.0.xml
+repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-scarthgap -m real-time-edge-3.1.0.xml
 
-Release tag: Real-Time-Edge-v3.0-202412
+Release tag: Real-Time-Edge-v3.1-202503
 
-This file is an addendum to SCR-REAL-TIME-EDGE-3.0.txt.
+This file is an addendum to SCR-REAL-TIME-EDGE-3.1.txt.
 
 ----------------------------------------
 
