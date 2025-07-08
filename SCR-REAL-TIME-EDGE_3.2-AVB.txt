@@ -1,0 +1,23 @@
+Release - Real-time Edge Software 3.2 (includes AVB)
+ July 2025
+
+Outgoing License: LA_OPT_NXP_Software_License v63 May 2025 - Additional Distribution License granted - Section 2.3 applies
+License File:     LICENSE.txt
+
+Yocto Project recipe manifest:
+repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-walnascar -m real-time-edge-3.2.0.xml
+
+Release tag: Real-Time-Edge-v3.2-202507
+
+This file is an addendum to SCR-REAL-TIME-EDGE-3.2.txt.
+
+----------------------------------------
+
+Package:                        genavb-media
+Outgoing License:               CC-BY-3.0
+License File:                   recipes-avb/genavb-media/files/CC-BY-3.0
+Package Category:               Demo application
+Type of content:                Media Samples
+Description and comments:       Media files used for GenAVB/TSN demo applications
+Origin:                         The Durian Open Movie Project by the Blender Foundation (CC-BY-3.0) - https://durian.blender.org / Added overlay timestamps from original video
+                                Inhale by Peter Rudenko (CC-BY-3.0) - https://freemusicarchive.org/music/Peter_Rudenko/Incomplete/04_-_Peter_Rudenko_-_Inhale/ / Extracted only first 22 seconds
