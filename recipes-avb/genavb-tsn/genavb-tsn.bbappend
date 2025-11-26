@@ -23,7 +23,7 @@ DEPENDS:append = " ${@bb.utils.contains_any('GENAVB_TSN_CONFIG', 'endpoint_avb e
 		      '', d)}"
 
 # Add Runtime recommended packages for AVB endpoint demo apps
-ENDPOINT_AVB_APPS_RRECOMMENDS = "genavb-media alsa-utils-alsamixer"
+ENDPOINT_AVB_APPS_RRECOMMENDS = "genavb-images genavb-media alsa-utils-alsamixer"
 
 RRECOMMENDS:${PN}:append = " ${@bb.utils.contains_any('GENAVB_TSN_CONFIG', 'endpoint_avb endpoint_avb_tsn endpoint_avb_tsn_bridge endpoint_avb_tsn_hybrid', \
 				bb.utils.contains('GENAVB_TSN_DEMO_APPS', '1', '${ENDPOINT_AVB_APPS_RRECOMMENDS}', ' ', d),\
